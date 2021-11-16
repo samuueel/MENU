@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/1942215-personagens-de-grupos-de-trabalhadores-vetor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    height: 550px;
+    border: 1px solid black;
+    text-decoration: none;
+    background: linear-gradient(rgb(255, 255, 255) , rgb(189, 189, 189));
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.container header { 
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.img-perfil {
+    background: url(https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2014%2F07%2F03%2F11%2FLogo-LV-73375_129929_051026977_1898513161.jpg);
+    width: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 3px;
+
+}
+
+.container header nav {
+    border-radius: 10px;
+    
+}
+
+div header nav ul {
+    margin-left: 100px;
+    float: right;
+    margin-top: 10%;
+    padding: 0;
+}
+  
+div header nav li {
+    margin: 0 10px;
+    display: inline-block;
+    justify-content: space-around;
+    margin-right: 15px;
+    transition: 0.2s ease-in-out;
+}
+  
+div header nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s linear;
+}
+  
+div header li a:hover {
+    border-bottom: 1px solid rgb(217, 255, 0);
+    font-size: 18px;
+    color: rgb(255, 238, 0);
+}
+
+.img-home {
+    background: url(https://loga.net.br/wp-content/uploads/2020/08/log_j8587_r40_plataforma-cursos-online.png);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    height: 200px; 
+}
+
+.titulo-cursos {
+    width: 100%;
+    height: 7%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursos {
+    flex-direction: column;
+    clear: both;
+}
+.cursos p {
+    width: 32%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+
+button {
+    margin-left: 5%;
+    border-radius: 20px;
+    border-color: black;
+    background-color: rgb(253, 253, 156);
+    margin-bottom: 2%;
+    margin-top: -10%;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+footer {
+    font-size: 10px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        background: none;
+        background-color: rgb(209, 209, 209);
+    }
+    .container {
+        width: 100%;
+        height: 600px;
+    }
+    .img-perfil {
+        display: none;
+               
+    }
+    .img-home {
+        width: 100%;
+        margin: 0;
+    }
+    div header nav ul {
+        display: flex;
+        justify-content: center;
+        float: none;
+        align-items: center;
+        margin: 0;
+        padding-left: 0;
+        font-size: 17px;
+        margin-bottom: 2%;
+    }
+    .container header {
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container header nav {
+        padding: 0;
+    }
+    .cursos {
+        margin-left: 2%;
+    }
+    button {
+       
+        margin: 2%;
+    }
+    footer {
+        margin-top: 3%;
+    }
+}
